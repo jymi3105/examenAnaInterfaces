@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integracion de todos los conocimientos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+    <header>
+        ESTE ES EL HEADER DE MI WEB
+    </header>
+    <div class="container">
+
+        <div class="texto">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia odit, totam voluptatum nam facilis
+                beatae fugiat libero, culpa itaque et quas! Quae ab expedita earum possimus quidem excepturi, illo
+                maxime maiores, vitae veniam obcaecati, nesciunt magni esse quaerat. Quibusdam vel, unde voluptatem
+                distinctio dolor velit. Asperiores deleniti voluptatem consectetur corrupti?</p>
+        </div>
+        <div class="imagenes">
+            <figure class="imagen">
+                <picture>
+                    <source media="(min-width: 900px)"
+                        srcset="materiales/escarabajoRinoceronte_800px.jpg 800w, materiales/escarabajoRinoceronte_500px.jpg 500w" />
+                    <source media="(min-width: 700px)" srcset="materiales/escarabajoRinoceronte_500px.jpg" />
+                    <img src="materiales/escarabajoRinoceronte_250px.jpg">
+                </picture>
+                <figcaption>Esto es un escarabajo rinoceronte, comunes en las noches tropicales durante la epoca estival
+                </figcaption>
+            </figure>
+
+            <figure class="imagen">
+                <picture>
+                    <source media="(min-width: 900px)"
+                        srcset="materiales/mariquitaVerde_800px.jpg 800w, materiales/mariquitaVerde_500px.jpg 500w" />
+                    <source media="(min-width: 700px)" srcset="materiales/mariquitaVerde_500px.jpg" />
+                    <img src="materiales/mariquitaVerde_250px.jpg">
+                </picture>
+                <figcaption>Y esto es una mariquita de color verde, de las cuales en España no conseguiremos ver nunca
+                </figcaption>
+            </figure>
+
+        </div>
+        <div class="texto">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, blanditiis quo? Impedit maiores itaque
+                molestias sit, nisi amet ipsam ab quidem alias aspernatur possimus nulla ea obcaecati rerum quas
+                consectetur.</p>
+        </div>
+        <div class="video">
+            <nav><button onclick="playVideo();">
+                    Play <i class="glyphicon glyphicon-play"></i>
+                </button>
+                <button onclick="pauseVideo();">
+                    Pause <i class="glyphicon glyphicon-pause"></i>
+                </button>
+                <button onclick="stopVideo()">
+                    Stop <i class="glyphicon glyphicon-stop"></i>
+                </button>
+                <button onclick="rewindVideo();">
+                    Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+                </button>
+            </nav>
+            <video controls="controls" id="myVideo" poster="materiales/mariquitaComun.jpg">
+                <source src="materiales/BATALLA de ESCORPION vs CIENPIES GIGANTE!!.mp4" type="video/mp4" />
+                <!--<source src="movie_clip2.ogg" type="video/ogg" />-->
+
+                <track kind=captions src="materiales/subtitulos.vtt" srclang=es lang=es label="Spanish" default>
+            </video>
+        </div>
+    </div>
+    <footer>
+        Y ESTO ES EL PIE DE PAGINA
+    </footer>
+    <script src="js/codigo.js"></script>
+
+</body>
+
+</html>
