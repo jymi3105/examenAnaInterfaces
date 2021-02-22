@@ -3,45 +3,46 @@ $color-main1: rgb(17, 104, 5);
 $color-main2: rgb(196, 228, 155);
 $color-main3: rgb(218, 241, 203);
 $colorLetrasGrandes: white;
-$negro:black;
+$negro: black;
 
 //TAMAÑOS DE LETRA
-$letrasTitulos1:3em;
-$letrasTitulos2:2em;
-$letrasTitulos3:1.5em;
+$letrasTitulos1: 3em;
+$letrasTitulos2: 2em;
+$letrasTitulos3: 1.5em;
 
 //MARGENES
-$margenesXLL:120px;
-$margenesXL:30px;
-$margenesL:20px;
-$margenesM:15px;
-$margenesS:10px;
-$margenesXS:5px;
+$margenesXLL: 120px;
+$margenesXL: 30px;
+$margenesL: 20px;
+$margenesM: 15px;
+$margenesS: 10px;
+$margenesXS: 5px;
 
 //tamanioS
-$tamanioXLL:30px;
-$tamanioXL:25px;
-$tamanioL:15px;
-$tamanioM:10px;
-$tamanioS:5px;
-$tamanioXS:2px;
+$tamanioXLL: 30px;
+$tamanioXL: 25px;
+$tamanioL: 15px;
+$tamanioM: 10px;
+$tamanioS: 5px;
+$tamanioXS: 2px;
 
 //porcentajes
-$total:100%;
-$casiTotal:90%;
-$masDeMitad:65%;
-$mitad:50%;
-$unCuarto:25%;
+$total: 100%;
+$casiTotal: 90%;
+$masDeMitad: 65%;
+$mitad: 50%;
+$unCuarto: 25%;
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: $color-main3;
 }
 
-header, footer{
+header,
+footer {
     text-align: center;
     margin: auto;
     background-color: $color-main1;
@@ -54,7 +55,7 @@ header, footer{
     box-shadow: $tamanioS $tamanioS $tamanioS $color-main1;
 }
 
-.container{
+.container {
     border: $tamanioXS solid $color-main1;
     width: $total;
     margin: {
@@ -68,7 +69,7 @@ header, footer{
 }
 
 //Esto es para el contenedor que contiene los tres videos
-.video{
+.video {
     width: $total;
     clear: both;
     height: auto;
@@ -76,43 +77,45 @@ header, footer{
     margin: {
         right: auto;
         left: auto;
-        top: $tamanioXL;
-        bottom: $tamanioL;
+        top: $tamanioXS;
+        bottom: $tamanioXS;
     }
-    padding: $tamanioXL;
+
 }
 
 //esto se aplica para cada video que hay dentro del contenedos
-.video video{
+.video div video {
     max-width: 100%;
     width: $total;
-    height: 500px;
-    margin: $tamanioXLL 0 $tamanioXLL 0;
     border-radius: 30px;
 }
 
-
-nav ul{
+nav ul {
     margin-left: 150px;
     z-index: 100;
 }
 
-#navegacion li{
+#navegacion li {
     float: left;
-    padding: $margenesM $margenesXL $margenesM $margenesXL ;
+    padding: $margenesM $margenesXL $margenesM $margenesXL;
     margin: $margenesXL;
     background-color: $color-main1;
     list-style-type: none;
 }
 
-#navegacion li a{
+#navegacion li a {
     text-decoration: none;
     color: $colorLetrasGrandes;
 }
 //A ESTOS TITULOS LE APLICO EL VALOR DE ESTA VARIABLE DESCRITAS EN LA PARTE SUPERIOR
-h3{
-    font-size: $letrasTitulos2;
+h3 {
+    font-size: $letrasTitulos3;
 }
 
+@media (min-width: 1100px) {
 
-
+    .video div {
+        width: 33%;
+        display: inline-block;
+    }
+}
