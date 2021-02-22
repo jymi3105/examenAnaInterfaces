@@ -8,6 +8,13 @@ body {
   color: #5a5a5a;
 }
 
+.imagen{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  max-width: 40%;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

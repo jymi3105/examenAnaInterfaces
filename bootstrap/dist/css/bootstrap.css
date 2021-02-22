@@ -25,7 +25,7 @@
   --info: #17a2b8;
   --warning: #ffc107;
   --danger: #dc3545;
-  --light: #f3cfcf;
+  --light: #1b852c;
   --dark: #640a0a;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -59,9 +59,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #640a0a;
+  color: #08aa16;
   text-align: left;
-  background-color: #d6a0a0;
+  background-color: #09803e;
 }
 
 [tabindex="-1"]:focus {
@@ -2296,8 +2296,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #640a0a;
-  border-color: #640a0a;
+  background-color: #046d30;
+  border-color: #0a6449;
 }
 .btn-primary:hover {
   color: #fff;
@@ -2712,7 +2712,7 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #640a0a;
+  color: #0a6437;
   text-decoration: none;
 }
 .btn-link:hover {
@@ -5700,7 +5700,7 @@ a.close.disabled {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #fff;
+  color: black;
   text-align: center;
 }
 

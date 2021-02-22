@@ -1,0 +1,118 @@
+//VARIABLES DE COLORES
+$color-main1: rgb(17, 104, 5);
+$color-main2: rgb(196, 228, 155);
+$color-main3: rgb(218, 241, 203);
+$colorLetrasGrandes: white;
+$negro:black;
+
+//TAMAÑOS DE LETRA
+$letrasTitulos1:3em;
+$letrasTitulos2:2em;
+$letrasTitulos3:1.5em;
+
+//MARGENES
+$margenesXLL:120px;
+$margenesXL:30px;
+$margenesL:20px;
+$margenesM:15px;
+$margenesS:10px;
+$margenesXS:5px;
+
+//tamanioS
+$tamanioXLL:30px;
+$tamanioXL:25px;
+$tamanioL:15px;
+$tamanioM:10px;
+$tamanioS:5px;
+$tamanioXS:2px;
+
+//porcentajes
+$total:100%;
+$casiTotal:90%;
+$masDeMitad:65%;
+$mitad:50%;
+$unCuarto:25%;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color-main3;
+}
+
+header, footer{
+    text-align: center;
+    margin: auto;
+    background-color: $color-main1;
+    color: $negro;
+    font-size: $letrasTitulos2;
+    font-weight: bold;
+    padding: $tamanioXL;
+    width: $total;
+    border-radius: $tamanioM;
+    box-shadow: $tamanioS $tamanioS $tamanioS $color-main1;
+}
+
+.container{
+    border: $tamanioXS solid $color-main1;
+    width: $total;
+    margin: {
+        top: $margenesXLL;
+        bottom: $margenesXL;
+        right: auto;
+        left: auto;
+    }
+    padding: $tamanioL;
+    background-color: $color-main2;
+}
+
+//Esto es para el contenedor que contiene los tres videos
+.video{
+    width: $total;
+    clear: both;
+    height: auto;
+    box-shadow: $tamanioS $tamanioS $tamanioM $color-main2;
+    margin: {
+        right: auto;
+        left: auto;
+        top: $tamanioXL;
+        bottom: $tamanioL;
+    }
+    padding: $tamanioXL;
+}
+
+//esto se aplica para cada video que hay dentro del contenedos
+.video video{
+    max-width: 100%;
+    width: $total;
+    height: 500px;
+    margin: $tamanioXLL 0 $tamanioXLL 0;
+    border-radius: 30px;
+}
+
+
+nav ul{
+    margin-left: 150px;
+    z-index: 100;
+}
+
+#navegacion li{
+    float: left;
+    padding: $margenesM $margenesXL $margenesM $margenesXL ;
+    margin: $margenesXL;
+    background-color: $color-main1;
+    list-style-type: none;
+}
+
+#navegacion li a{
+    text-decoration: none;
+    color: $colorLetrasGrandes;
+}
+//A ESTOS TITULOS LE APLICO EL VALOR DE ESTA VARIABLE DESCRITAS EN LA PARTE SUPERIOR
+h3{
+    font-size: $letrasTitulos2;
+}
+
+
+
